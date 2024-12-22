@@ -1,33 +1,4 @@
-/*class Solution {
-    public boolean buddyStrings(String s, String goal) {
-        if(s.length() != goal.length())
-            return false;
-        if(s.equals(goal))
-        {
-            Set<Character> set=new HashSet();
-            for(char ch:s.toCharArray())
-            {
-                if(set.contains(ch))
-                return true;
-            }
-            return false;
-        }
-        else{
-            List<Integer> l=new ArrayList();
-            for(int i=0;i<s.length();i++)
-            {
-                if(s.charAt(i) !=goal.charAt(i))
-                {
-                    return l.add(i);
-                }
-            }
-            return l.size() == 2 
-                && s.charAt(l.get(0))==goal.charAt(l.get(1)) 
-                && s.charAt(l.get(1))==goal.charAt(l.get(0));
-        }
-    }
-}
-*/
+
 class Solution {
     public boolean buddyStrings(String s, String goal) {
         if (s.length() != goal.length()) {
